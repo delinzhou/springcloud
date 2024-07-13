@@ -21,7 +21,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @Value("${pattern.dateformate}")
+    @Value("${pattern.dateformate:yyyy-MM-dd HH:mm:ss}")
     private String dateformate;
 
     @GetMapping("now")
